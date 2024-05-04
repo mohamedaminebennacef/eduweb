@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+          <a href="#" class="logo"><img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo"></a>
+          <nav class="navbar" data-navbar>
+            <div class="wrapper">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+              </a>
+              <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+            <ul class="navbar-list">
+              <li class="navbar-item"><a href="#home" class="navbar-link" data-nav-link>Commencer ici</a></li>
+              <li class="navbar-item"><a href="#courses" class="navbar-link" data-nav-link>Universités</a></li>
+              <li class="navbar-item"><a href="#avis" class="navbar-link" data-nav-link>Avis</a></li>
+              <li class="navbar-item"><a href="#inscription" class="navbar-link" data-nav-link>Inscription</a></li>
+              <li class="navbar-item"><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
+            </ul>
+          </nav>
+          <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+      </header>
+    <div class="header__random">
+        <p style="text-align: center;">Besoin de renseignements ?
+          
+        </p>
+        <h1 style="text-align: center;">N'hésitez pas à nous contacter via le formulaire ci-dessous !
+        </h1>
+      </div>
+    
+    <div class="form-container" id="inscription">
+      <form class="needs-validation" validate>
+          <div class="form-row">
+              <div class="modal__circle"></div>
+              <div class="col-md-5 mb-3">
+                  <label for="validationTooltip01">Nom</label>
+                  <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" required>
+                  <div class="valid-tooltip">
+                      Looks good!
+                  </div>
+              </div>
+              <div class="col-md-5 mb-3">
+                  <label for="validationTooltip02">Prenom</label>
+                  <input type="text" class="form-control" id="validationTooltip02" placeholder="Prenom" required>
+                  <div class="valid-tooltip">
+                      Looks good!
+                  </div>
+              </div>
+              
+              <div class="col-md-5 mb-3">
+                  <label for="validationTooltip02">Age</label>
+                  <input type="text" class="form-control" id="validationTooltip02" placeholder="Age" required>
+              </div>
+              <div class="col-md-5 mb-3">
+                  <label for="inputState">Sexe:</label>
+                  <select id="inputState" class="form-control ">
+                      <option selected>Homme</option>
+                      <option>Femme</option>
+                  </select>
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="col-md-5 mb-5">
+                  <label for="validationTooltip01">Nationnalite :</label>
+                  <input type="text" class="form-control" id="validationTooltip01" placeholder="Nationnalite" required>
+              </div>
+              <div class="col-md-5 mb-5">
+                  <label for="validationTooltip01">Email :</label>
+                  <input type="text" class="form-control" id="validationTooltip01" placeholder="Email" required>
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="col-md-5 mb-3">
+                  <div class="custom-file mb-3">
+                      <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                      <label class="custom-file-label" for="validatedCustomFile">CV (PDF)</label>
+                  </div>
+                  <div class="custom-file mb-3">
+                      <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                      <label class="custom-file-label" for="validatedCustomFile">Diplomes (PDF)</label>
+                      <div class="invalid-feedback">Example invalid custom file feedback</div>
+                  </div>
+              </div>
+              <div class="col-md-5 mb-3">
+                  <div class="custom-file mb-3">
+                      <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                      <label class="custom-file-label" for="validatedCustomFile">Certificats (PDF)</label>
+                      <div class="invalid-feedback">Example invalid custom file feedback</div>
+                  </div>
+                  <div class="custom-file mb-3">
+                      <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                      <label class="custom-file-label" for="validatedCustomFile">Image personnelle</label>
+                  </div>
+              </div>
+          </div>
+          <div class="form-check">
+
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+                <input type="checkbox" name="" id="">
+                  <label class="form-check-label" for="gridCheck">
+                      J'accepte les termes et conditions d'inscription à ce service et confirme par la présente avoir lu la politique de confidentialité.
+                  </label>
+              </div>
+          </div>
+          <button class="bt" type="submit">S'INSCRIRE</button>
+      </form>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="box">
+        <h3>Réseaux sociaux
+        </h3>
+        <ul class="social">
+          <li>
+            <a href="#" class="facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text">
+          Agence française pour la promotion de l’enseignement supérieur, l’accueil et la mobilité internationale
+        </p>
+      </div>
+      <div class="box">
+        <ul class="links">
+          <li><a href="#">Rechercher ma formation
+          </a></li>
+          <li><a href="#">Mieux préparer son projet d'études</a></li>
+          <li><a href="#">S'informer sur le coût des études</a></li>
+          <li><a href="#">EduWeb vous accompagne</a></li>
+          <li><a href="#">A propos de EduWeb</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="line">
+          <i class="fas fa-map-marker-alt fa-fw"></i>
+          <div class="info">Cité Taffala (Ibn Khaldoun) 4003 Sousse Tunisie</div>
+        </div>
+        <div class="line">
+          <i class="far fa-clock fa-fw"></i>
+          <div class="info">Heures d'ouverture: de 10h00 à 18h00</div>
+        </div>
+        <div class="line">
+          <i class="fas fa-phone-volume fa-fw"></i>
+          <div class="info">
+            <span>+216 73 382 656</span>
+            <span>+216 73 382 658</span>
+          </div>
+        </div>
+      </div>
+      <div class="box footer-gallery">
+        <div class="image">
+          <img src="fim1.png" alt="" />
+          <img src="fim2.jpg" alt="" />
+          <img src="fim3.png" alt="" />
+          <img src="fim4.jpg" alt="" />
+          <img src="fim5.png" alt="" />
+          <img src="fim6.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <p class="copyright">©2024 EDUWEB
+
+    </p>
+  </div>
+</body>
+</html>
