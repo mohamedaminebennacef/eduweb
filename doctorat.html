@@ -28,41 +28,48 @@
       </head>
     <body>
         <!-- ******************************************************************************************** Start header ********************************************************************************************-->
-        <header class="header" data-header>
-            <div class="container">
-            <a href="#" class="logo"><img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo"></a>
-            <nav class="navbar" data-navbar>
-                <div class="wrapper">
-                <a href="#" class="logo">
-                    <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+        <div class="header" id="header">
+          <div class="container">
+            <a href="index.html" class="logo">
+              <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+            </a>
+            <ul class="main-nav">
+              <li><a href="#universites">Universités</a></li>
+              <li><a href="#avis">Avis</a></li>
+              <li><a href="#features">Conditions de Bourse</a></li>
+              <li>
+                <a href="#"><i class="fas fa-bars"></i>
                 </a>
-                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-                </button>
+                <!-- Start Megamenu -->
+                <div class="mega-menu">
+                  <ul class="links">
+                    <li><a href="#stats"><i class="far fa-chart-bar fa-fw"></i> Stats</a></li>
+                    <li><a href="bourses.html"><i class="fas fa-search"></i>Trouver des Bourses</a></li>
+                    <li><a href="formulaire.html"><i class="far fa-user fa-fw"></i>Inscription</a></li>
+                  </ul>
+                  <ul class="links">
+                    <li><a href="Baccalaureat.html"><i class="fas fa-graduation-cap"></i>Bourse Baccalaureat</a></li>
+                    <li><a href="master.html"><i class="fas fa-user-graduate"></i>Bourse Master</a></li>
+                    <li><a href="doctorat.html"><i class="fas fa-clipboard-check"></i>Bourse Doctorat</a></li>
+                  </ul>
                 </div>
-                <ul class="navbar-list">
-                <li class="navbar-item"><a href="#home" class="navbar-link" data-nav-link>Commencer ici</a></li>
-                <li class="navbar-item"><a href="formulaire.html" class="navbar-link" data-nav-link>Universités</a></li>
-                <li class="navbar-item"><a href="#avis" class="navbar-link" data-nav-link>Avis</a></li>
-                <li class="navbar-item"><a href="#inscription" class="navbar-link" data-nav-link>Inscription</a></li>
-                <li class="navbar-item"><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
-                </ul>
-            </nav>
-            <div class="overlay" data-nav-toggler data-overlay></div>
-            </div>
-        </header>
+                <!-- End Megamenu -->
+              </li>
+            </ul>
+          </div>
+        </div>
         <!-- ******************************************************************************************** end header ********************************************************************************************-->
         
         <!-- ******************************************************************************************** Start Events ********************************************************************************************-->
         <div class="events" id="events">
             <div class="dots dots-up"></div>
             <div class="dots dots-down"></div>
-            <h2 class="main-title">Master</h2>
+            <h2 class="main-title">Doctorat</h2>
             <div class="container">
                 <div class="team">
                         <div class="box">
                             <div class="data">
-                            <img src="bac.jpg" alt="" />
+                            <img src="doctorat.jpg"  alt="" />
                             <div class="social">
                                 <a href="#">
                                 <i class="fab fa-facebook-f"></i>
@@ -79,23 +86,23 @@
                             </div>
                             </div>
                             <div class="info">
-                            <h3>Diplôme d’Université</h3>
-                            <p>Vous pouvez préparer plusieurs diplômes au sein du niveau licence </p>
+                            <h3>Bourses d'Études Doctorales</h3>
+                            <p style="font-size:18px ;">Nous offre un soutien financier et académique essentiel aux chercheurs talentueux désireux de poursuivre leurs études doctorales </p>
                             </div>
                         </div>
                 </div>
                 <div class="info">
                     <div class="time">
                     <div class="unit">
-                        <span class="days">18 ans</span>
+                        <span class="days">25 ans</span>
                         <span>Age minimal</span>
                     </div>
                     <div class="unit">
-                        <span class="hours">22 ans</span>
+                        <span class="hours">40 ans</span>
                         <span>Age maximal</span>
                     </div>
                     <div class="unit">
-                        <span class="minutes">Bac +3 minimum</span>
+                        <span class="minutes">Bac +5 minimum</span>
                         <span>Niveau d'etude</span>
                     </div>
                     <div class="unit">
@@ -104,14 +111,15 @@
                     </div>
                     <div class="unit">
                         <span class="seconds">Bourse mensuelle</span>
-                        <span>500£</span>
+                        <span>7500£</span>
                     </div>
                     </div>
-                    <h2 class="title">LES FORMATIONS AU NIVEAU LICENCE (BAC+1, BAC+2, BAC+3)
+                    <h2 class="title">Programme de Bourses pour le Doctorat
                     </h2>
                     <p class="description">
                     
-        Pour obtenir une bourse d'études à l'étranger, il est essentiel de démontrer un excellent dossier académique ainsi qu'une motivation exceptionnelle pour la formation envisagée. De plus, les compétences linguistiques.
+                      
+Cette bourse vise les candidats âgés de 25 à 40 ans, titulaires d'un niveau d'études minimum de baccalauréat +5 et maîtrisant l'anglais. Elle offre une allocation mensuelle de 700€ pour soutenir financièrement leurs recherches doctorales dans divers domaines.
                     </p>
                 </div>
                 <div class="subscribe">

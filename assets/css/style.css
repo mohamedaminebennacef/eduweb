@@ -236,7 +236,7 @@ body {
 .header .main-nav > li:hover .mega-menu {
   opacity: 1;
   z-index: 100;
-  top: calc(100% + 1px);
+  top: 70px;
 }
 .header .main-nav > li > a {
   display: flex;
@@ -262,13 +262,13 @@ body {
   position: absolute;
   width: 100%;
   height: 4px;
-  background-color: var(--main-color);
+  background-color: var(--kappel);
   top: 0;
   left: -100%;
   transition: var(--main-transition);
 }
 .header .main-nav > li > a:hover {
-  color: var(--main-color);
+  color: var(--kappel);
   background-color: #fafafa;
 }
 .header .main-nav > li > a:hover::before {
@@ -280,7 +280,7 @@ body {
   left: 0;
   padding: 30px;
   background-color: white;
-  border-bottom: 3px solid var(--main-color);
+  border-bottom: 3px solid var(--kappel);
   z-index: -1;
   display: flex;
   gap: 40px;
@@ -296,7 +296,8 @@ body {
   }
 }
 .header .mega-menu .image img {
-  max-width: 100%;
+  width: 300px;
+  max-height:400px;
 }
 @media (max-width: 991px) {
   .header .mega-menu .image {
@@ -333,11 +334,14 @@ body {
   width: 100%;
 }
 .header .mega-menu .links li a {
-  color: var(--main-color);
+  color: rgb(119, 119, 119);
   padding: 15px;
   display: block;
   font-size: 18px;
   font-weight: bold;
+}
+.header .mega-menu .links li i {
+  color: var(--kappel);
 }
 .header .mega-menu .links li a i {
   margin-right: 10px;
@@ -662,14 +666,22 @@ body {
 }
 .carousel-paragraph {
   position: absolute;
-  top: 47%;
-  left: 30%; /* Start position from the right */
+  top: 50%;
+  left: 50%; /* Start position from the right */
   transform: translate(-50%, -50%);
   background-color: hsl(170, 75%, 41%);
   color: white;
   padding: 10px;
   text-align: center;
   z-index: 2;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust z-index as needed */
+  /* Add any other styles you want for the fixed header */
 }
 
 /*  **************************************************************** carousel *************************************************************************************************/
