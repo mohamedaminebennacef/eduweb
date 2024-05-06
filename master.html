@@ -25,26 +25,28 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-4X4DRpPDGwNZWPWTlPIJ5xz0QIsyTzKlN8zjGKAqazUuALhDzrBNcXCX3JAM5quC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
+        <!-- Animate on scroll library cdn -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       </head>
     <body>
         <!-- ******************************************************************************************** Start header ********************************************************************************************-->
         <div class="header" id="header">
           <div class="container">
-            <a href="index.html" class="logo">
-              <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+            <a href="index.html">
+              <img src="./assets/images/logo.svg" data-aos="fade-down" data-aos-duration="700" width="162" height="50" alt="EduWeb logo">
             </a>
             <ul class="main-nav">
-              <li><a href="#universites">Universités</a></li>
-              <li><a href="#avis">Avis</a></li>
-              <li><a href="#features">Conditions de Bourse</a></li>
+              <li><a href="#universites" data-aos="fade-down" data-aos-duration="700">Universités</a></li>
+              <li><a href="#avis" data-aos="fade-down" data-aos-duration="700" >Avis</a></li>
+              <li><a href="#features" data-aos="fade-down" data-aos-duration="700">Conditions de Bourse</a></li>
               <li>
-                <a href="#"><i class="fas fa-bars"></i>
+                <a href="#" data-aos="fade-down" data-aos-duration="700"><i class="fas fa-bars"></i>
                 </a>
                 <!-- Start Megamenu -->
                 <div class="mega-menu">
                   <ul class="links">
                     <li><a href="#stats"><i class="far fa-chart-bar fa-fw"></i> Stats</a></li>
-                    <li><a href="bourses.html"><i class="fas fa-search"></i>Trouver des Bourses</a></li>
+                    <li><a href="bourse .html"><i class="fas fa-search"></i>Trouver des Bourses</a></li>
                     <li><a href="formulaire.html"><i class="far fa-user fa-fw"></i>Inscription</a></li>
                   </ul>
                   <ul class="links">
@@ -64,9 +66,9 @@
         <div class="events" id="events">
             <div class="dots dots-up"></div>
             <div class="dots dots-down"></div>
-            <h2 class="main-title">Master</h2>
+            <h2 class="main-title main-title2" data-aos="zoom-in">Master</h2>
             <div class="container">
-                <div class="team">
+                <div class="team" data-aos="fade-up-right" data-aos-duration="900">
                         <div class="box">
                             <div class="data">
                             <img src="master.jpg" alt="" />
@@ -94,33 +96,33 @@
                 <div class="info">
                     <div class="time">
                     <div class="unit">
-                        <span class="days">Age minimal</span>
+                        <span class="days" data-aos="fade-left" data-aos-duration="900">Age minimal</span>
                         <span>22 ans</span>
                     </div>
                     <div class="unit">
-                        <span class="hours">Age maximal</span>
+                        <span class="hours" data-aos="fade-left" data-aos-duration="900">Age maximal</span>
                         <span>30 ans</span>
                     </div>
                     <div class="unit">
-                        <span class="minutes">Niveau d'etude</span>
+                        <span class="minutes" data-aos="fade-left" data-aos-duration="900">Niveau d'etude</span>
                         <span>Bac +3 minimum</span>
                     </div>
                     <div class="unit">
-                        <span class="seconds">Langues obligatoires</span>
+                        <span class="seconds" data-aos="fade-left" data-aos-duration="900">Langues obligatoires</span>
                         <span>Anglais,Français</span>
                     </div>
                     <div class="unit">
-                        <span class="seconds">Bourse mensuelle</span>
+                        <span class="seconds" data-aos="fade-left" data-aos-duration="900">Bourse mensuelle</span>
                         <span>500£</span>
                     </div>
                     </div>
-                    <h2 class="title">Programme de Bourses pour le Master
+                    <h2 class="title" data-aos="zoom-in-up" data-aos-duration="900">Programme de Bourses pour le Master
                     </h2>
-                    <p class="description">
+                    <p class="description"data-aos="zoom-in-up" data-aos-duration="900">
                       Cette bourse est dédiée aux candidats âgés de 22 à 30 ans, ayant un niveau d'études minimum équivalent à un baccalauréat +3 et maîtrisant les langues anglaise et française. Elle octroie une allocation mensuelle de 500€ pour soutenir financièrement leur poursuite d'études au niveau Master.
                     </p>
                 </div>
-                <div class="subscribe">
+                <div class="subscribe" data-aos="zoom-in-up" data-aos-duration="900">
                     <form action="">
                     <input type="email" placeholder="Entrer votre Email" />
                     <input type="submit" value="S'inscrire" />
@@ -131,7 +133,8 @@
         <!-- ******************************************************************************************** End Events ********************************************************************************************-->
 
            <!-- *****************************************************************************Start Footer ************************************************************************** -->
-    <div class="footer">
+    <div class="footer" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
       <div class="container">
         <div class="box">
           <h3>Réseaux sociaux
@@ -200,7 +203,8 @@
       </p>
     </div>
     <!-- *****************************************************************************End Footer ****************************************************************************-->
-
-        
+    <script src="./assets/js/script.js" defer></script>
+    <!-- Animate on Scroll library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </body>
 </html>
