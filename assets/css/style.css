@@ -1543,14 +1543,15 @@ body {
 }
 
 .discount .form [type="submit"]:hover {
-  background-color: var(--main-color-alt);
+  background-color: hsl(170deg 76.45% 35.41%);
 }
 .discount .content {
   text-align: center;
   padding: 0 20px;
 }
 .discount .content h2 {
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 40px;
   letter-spacing: -2px;
 }

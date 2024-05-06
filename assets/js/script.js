@@ -1,12 +1,6 @@
 'use strict';
 
-/**
- * add event on element
- */
-
-
 AOS.init();
-
 const addEventOnElem = function (elem, type, callback) {
   if (elem.length > 1) {
     for (let i = 0; i < elem.length; i++) {
@@ -16,10 +10,6 @@ const addEventOnElem = function (elem, type, callback) {
     elem.addEventListener(type, callback);
   }
 }
-
-/**
- * Carousel function
- */
 
 const initializeCarousel = function () {
   const buttons = document.querySelectorAll("[data-carousel-button]");
@@ -36,53 +26,40 @@ const initializeCarousel = function () {
       if (newIndex >= slides.children.length) newIndex = 0;
       slides.children[newIndex].dataset.active = true;
       delete activeSlide.dataset.active;
-      // Restart the interval after button click
       intervalId = setInterval(() => {
         const nextButton = document.querySelector("[data-carousel-button='next']");
         nextButton.click();
-      }, 3000); // Adjusted back to 3000 milliseconds
+      }, 3000);
     });
   });
 
-  // Start the initial interval
   intervalId = setInterval(() => {
     const nextButton = document.querySelector("[data-carousel-button='next']");
     nextButton.click();
   }, 3000);
 }
 
-initializeCarousel(); // Call the function to initialize the carousel
-// The End Of The Year Date
-// 1000 milliseconds = 1 Second
+initializeCarousel(); 
 
-let countDownDate = new Date("Dec 31, 2022 23:59:59").getTime();
-// console.log(countDownDate);
 
-let counter = setInterval(() => {
-  // Get Date Now
-  let dateNow = new Date().getTime();
 
-  // Find The Date Difference Between Now And Countdown Date
-  let dateDiff = countDownDate - dateNow;
 
-  // Get Time Units
-  // let days = Math.floor(dateDiff / 1000 / 60 / 60 / 24);
-  let days = Math.floor(dateDiff / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((dateDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((dateDiff % (1000 * 60)) / 1000);
 
-  document.querySelector(".days").innerHTML = days < 10 ? `0${days}` : days;
-  document.querySelector(".hours").innerHTML = hours < 10 ? `0${hours}` : hours;
-  document.querySelector(".minutes").innerHTML = minutes < 10 ? `0${minutes}` : minutes;
-  document.querySelector(".seconds").innerHTML = seconds < 10 ? `0${seconds}` : seconds;
 
-  if (dateDiff < 0) {
-    clearInterval(counter);
-  }
-}, 1000);
+let progressSpans = document.querySelectorAll(".the-progress span");
+let section = document.querySelector(".our-skills");
+
+let nums = document.querySelectorAll(".stats .number");
+let statsSection = document.querySelector(".stats");
+let started = false; // Function Started ? No
+
 window.onscroll = function () {
-
+  // Skills Animate Width
+  if (window.scrollY >= section.offsetTop - 250) {
+    progressSpans.forEach((span) => {
+      span.style.width = span.dataset.width;
+    });
+  }
   // Stats Increase Number
   if (window.scrollY >= statsSection.offsetTop) {
     if (!started) {
@@ -101,3 +78,5 @@ function startCount(el) {
     }
   }, 2000 / goal);
 }
+
+
