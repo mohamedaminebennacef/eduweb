@@ -246,6 +246,7 @@ body {
   position: relative;
   color: black;
   padding: 0 30px;
+  text-decoration: none;
   overflow: hidden;
   font-size: 18px;
   transition: var(--main-transition);
