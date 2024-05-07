@@ -399,6 +399,7 @@ body {
 .course-card .badge {
   background-color: var(--kappel_15);
   max-width: max-content;
+  text-decoration: none;
   color: var(--kappel);
   line-height: 25px;
   padding-inline: 10px;
