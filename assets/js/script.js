@@ -80,3 +80,9 @@ function startCount(el) {
 }
 
 
+var content = document.getElementsByClassName("header");
+var darkMode = document.getElementById('dark-change');
+darkMode.addEventListener('click', function(){
+  darkMode.classList.toggle('active');
+  content.classList.toggle('night');
+})

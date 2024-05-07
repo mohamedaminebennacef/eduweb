@@ -419,6 +419,9 @@ body {
   display: flex;
   align-items: center;
 }
+.course-card a {
+  text-decoration: none;
+}
 
 .course-card .wrapper { gap: 10px; }
 
@@ -675,6 +678,15 @@ body {
   padding: 10px;
   text-align: center;
   z-index: 2;
+}
+@media (max-width: 767px) {
+  .carousel-paragraph {
+    font-size: 14px; /* Adjust the font size for smaller screens */
+    padding: 5px; /* Adjust padding accordingly */
+    top: 50%; /* Reposition the element if needed */
+    left: 50%; /* Reposition the element if needed */
+    transform: translate(-50%, -50%); /* Center the element */
+  }
 }
 .fixed {
   position: fixed;
@@ -1656,3 +1668,39 @@ body {
   font-weight: bold;
 }
 /* End Stats */
+@media (max-width: 767px) {
+  .header .main-nav > li:nth-child(1),
+  .header .main-nav > li:nth-child(2),
+  .header .main-nav > li:nth-child(3),
+  .header .main-nav > li:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 5px; /* Add padding to the header */
+  }
+
+  .header .main-nav {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+
+  .header .main-nav > li:last-child {
+    margin-left: 70px; /* Move the last li (hamburger icon) to the right */
+  }
+
+  .header .main-nav > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    position: relative;
+    color: black;
+    padding: 0 30px;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 18px;
+    transition: var(--main-transition);
+  }
+}
