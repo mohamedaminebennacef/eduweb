@@ -80,9 +80,31 @@ function startCount(el) {
 }
 
 
-var content = document.getElementsByClassName("header");
-var darkMode = document.getElementById('dark-change');
-darkMode.addEventListener('click', function(){
-  darkMode.classList.toggle('active');
-  content.classList.toggle('night');
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
 })
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var notSection = document.querySelector(".not");
+
+  setTimeout(function() {
+    notSection.classList.add("active");
+  }, 800); // Delay of 2000 milliseconds (2 seconds)
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var closeButton = document.querySelector(".close-btn");
+  var notSection = document.querySelector(".not");
+
+  closeButton.addEventListener("click", function() {
+    notSection.classList.remove("active");
+  });
+});
